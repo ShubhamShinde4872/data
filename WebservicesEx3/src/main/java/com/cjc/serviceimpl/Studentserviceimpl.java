@@ -21,8 +21,15 @@ public class Studentserviceimpl implements Studentservicei {
 
 	@Override
 	public Student saveData(Student s) {
-		// TODO Auto-generated method stub
+		
 		return sri.save(s);
+	}
+
+	@Override
+	public List<Student> delete(int rollno) {
+		
+		sri.deleteData(rollno);
+		return sri.findAll();
 	}
 
 

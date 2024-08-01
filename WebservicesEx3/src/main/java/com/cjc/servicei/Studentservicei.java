@@ -10,6 +10,8 @@ public interface Studentservicei {
 
 	Student saveData(Student s);
 
+	List<Student> delete(int rollno);
+
 	
 
 }
